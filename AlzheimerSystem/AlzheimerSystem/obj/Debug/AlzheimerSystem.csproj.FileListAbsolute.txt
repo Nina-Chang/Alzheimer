@@ -1,0 +1,124 @@
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.AssemblyReference.cache
+G:\系統\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csprojAssemblyReference.cache
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CopyComplete
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+C:\Users\Jessica\Desktop\大四重要\研討會\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.AssemblyReference.cache
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CopyComplete
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+C:\Users\AA206\Pictures\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csprojAssemblyReference.cache
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CopyComplete
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+D:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.AssemblyReference.cache
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+E:\Independent Study\System\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+G:\系統\CskinTest0305\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.AssemblyReference.cache
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+G:\系統\CskinTest0317\CskinTest\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.AssemblyReference.cache
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.AssemblyReference.cache
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.SuggestedBindingRedirects.cache
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CopyComplete
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+E:\大學隨身碟\Independent Study\專題檔案\System檔案\CskinTest0613\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe.config
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.exe
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\bin\Debug\AlzheimerSystem.pdb
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\bin\Debug\CSkin.dll
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.AssemblyReference.cache
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.SuggestedBindingRedirects.cache
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.BTPairing.resources
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.HomePage.resources
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Login.resources
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.Properties.Resources.resources
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.GenerateResource.cache
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CoreCompileInputs.cache
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.csproj.CopyComplete
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.exe
+D:\Alzheimer\AlzheimerSystem\AlzheimerSystem\obj\Debug\AlzheimerSystem.pdb

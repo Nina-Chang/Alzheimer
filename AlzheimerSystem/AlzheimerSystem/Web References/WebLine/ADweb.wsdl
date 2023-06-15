@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="IdentifyForGPS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IdentifyForGPSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdentifyForGPSResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpecificIndoor1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpecificIndoor1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSpecificIndoor1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PosiData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="place" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PosiDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PosiDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLoacation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLoacationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectLoacationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectIndoor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeRange" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectIndoorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectIndoorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="savedate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="savedateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="savedateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoorCurrentDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoorCurrentDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIndoorCurrentDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveObjectPosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cookie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveObjectPositionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DateTime" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Longtitude" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Account" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertLocationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpecificAboveIndoor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpecificAboveIndoorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSpecificAboveIndoorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelectAboveIndoor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeRange" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelectAboveIndoorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSelectAboveIndoorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOutdoor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Acc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOutdoorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOutdoorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIndoorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoor1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoor1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIndoor1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoorCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoorCurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIndoorCurrentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoorAbove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndoorAboveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIndoorAboveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelectIndoor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeRange" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelectIndoorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSelectIndoorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpecificIndoor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpecificIndoorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSpecificIndoorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PictInsert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="img_url" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PictInsertResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PictSelect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PictSelectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PictSelectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeArrayElements">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChangeArrayElementsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeArrayElementsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="updateINFO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="帳號" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateINFOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateINFOResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="showAddressandCell">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="showAddressandCellResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="showAddressandCellResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="isPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="isPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="isPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update新密碼">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="密碼" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="帳號" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update新密碼Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Update新密碼Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallLineToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="帳號" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallLineTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallLineTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AccountExist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AccountExistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AccountExistResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="帳號是否存在">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="acc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="帳號是否存在Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="帳號是否存在Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="帳號" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="密碼" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="姓名" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="身分別" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="身分證字號" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="性別" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="生日" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="地址" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="電話" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SignResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IdentifyForGPSSoapIn">
+    <wsdl:part name="parameters" element="tns:IdentifyForGPS" />
+  </wsdl:message>
+  <wsdl:message name="IdentifyForGPSSoapOut">
+    <wsdl:part name="parameters" element="tns:IdentifyForGPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpecificIndoor1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpecificIndoor1" />
+  </wsdl:message>
+  <wsdl:message name="GetSpecificIndoor1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpecificIndoor1Response" />
+  </wsdl:message>
+  <wsdl:message name="PosiDataSoapIn">
+    <wsdl:part name="parameters" element="tns:PosiData" />
+  </wsdl:message>
+  <wsdl:message name="PosiDataSoapOut">
+    <wsdl:part name="parameters" element="tns:PosiDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectLoacationSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectLoacation" />
+  </wsdl:message>
+  <wsdl:message name="SelectLoacationSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectLoacationResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectIndoorSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectIndoor" />
+  </wsdl:message>
+  <wsdl:message name="SelectIndoorSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectIndoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="savedateSoapIn">
+    <wsdl:part name="parameters" element="tns:savedate" />
+  </wsdl:message>
+  <wsdl:message name="savedateSoapOut">
+    <wsdl:part name="parameters" element="tns:savedateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorCurrentDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIndoorCurrentDate" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorCurrentDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIndoorCurrentDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveObjectPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveObjectPosition" />
+  </wsdl:message>
+  <wsdl:message name="SaveObjectPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveObjectPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertLocation" />
+  </wsdl:message>
+  <wsdl:message name="InsertLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpecificAboveIndoorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpecificAboveIndoor" />
+  </wsdl:message>
+  <wsdl:message name="GetSpecificAboveIndoorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpecificAboveIndoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSelectAboveIndoorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSelectAboveIndoor" />
+  </wsdl:message>
+  <wsdl:message name="GetSelectAboveIndoorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSelectAboveIndoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOutdoorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOutdoor" />
+  </wsdl:message>
+  <wsdl:message name="GetOutdoorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOutdoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIndoor" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIndoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoor1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetIndoor1" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoor1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetIndoor1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorCurrentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIndoorCurrent" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorCurrentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIndoorCurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorAboveSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIndoorAbove" />
+  </wsdl:message>
+  <wsdl:message name="GetIndoorAboveSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIndoorAboveResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSelectIndoorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSelectIndoor" />
+  </wsdl:message>
+  <wsdl:message name="GetSelectIndoorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSelectIndoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpecificIndoorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpecificIndoor" />
+  </wsdl:message>
+  <wsdl:message name="GetSpecificIndoorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpecificIndoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="PictInsertSoapIn">
+    <wsdl:part name="parameters" element="tns:PictInsert" />
+  </wsdl:message>
+  <wsdl:message name="PictInsertSoapOut">
+    <wsdl:part name="parameters" element="tns:PictInsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="PictSelectSoapIn">
+    <wsdl:part name="parameters" element="tns:PictSelect" />
+  </wsdl:message>
+  <wsdl:message name="PictSelectSoapOut">
+    <wsdl:part name="parameters" element="tns:PictSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeArrayElementsSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeArrayElements" />
+  </wsdl:message>
+  <wsdl:message name="ChangeArrayElementsSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeArrayElementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateINFOSoapIn">
+    <wsdl:part name="parameters" element="tns:updateINFO" />
+  </wsdl:message>
+  <wsdl:message name="updateINFOSoapOut">
+    <wsdl:part name="parameters" element="tns:updateINFOResponse" />
+  </wsdl:message>
+  <wsdl:message name="showAddressandCellSoapIn">
+    <wsdl:part name="parameters" element="tns:showAddressandCell" />
+  </wsdl:message>
+  <wsdl:message name="showAddressandCellSoapOut">
+    <wsdl:part name="parameters" element="tns:showAddressandCellResponse" />
+  </wsdl:message>
+  <wsdl:message name="isPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:isPassword" />
+  </wsdl:message>
+  <wsdl:message name="isPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:isPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update新密碼SoapIn">
+    <wsdl:part name="parameters" element="tns:Update新密碼" />
+  </wsdl:message>
+  <wsdl:message name="Update新密碼SoapOut">
+    <wsdl:part name="parameters" element="tns:Update新密碼Response" />
+  </wsdl:message>
+  <wsdl:message name="CallLineTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:CallLineToken" />
+  </wsdl:message>
+  <wsdl:message name="CallLineTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:CallLineTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="AccountExistSoapIn">
+    <wsdl:part name="parameters" element="tns:AccountExist" />
+  </wsdl:message>
+  <wsdl:message name="AccountExistSoapOut">
+    <wsdl:part name="parameters" element="tns:AccountExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="帳號是否存在SoapIn">
+    <wsdl:part name="parameters" element="tns:帳號是否存在" />
+  </wsdl:message>
+  <wsdl:message name="帳號是否存在SoapOut">
+    <wsdl:part name="parameters" element="tns:帳號是否存在Response" />
+  </wsdl:message>
+  <wsdl:message name="SignSoapIn">
+    <wsdl:part name="parameters" element="tns:Sign" />
+  </wsdl:message>
+  <wsdl:message name="SignSoapOut">
+    <wsdl:part name="parameters" element="tns:SignResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ADwebSoap">
+    <wsdl:operation name="IdentifyForGPS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">判斷是家屬還是使用者，是否能使用GPS的定位功能</wsdl:documentation>
+      <wsdl:input message="tns:IdentifyForGPSSoapIn" />
+      <wsdl:output message="tns:IdentifyForGPSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificIndoor1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_同一時間每個地點的次數(平面圖的)</wsdl:documentation>
+      <wsdl:input message="tns:GetSpecificIndoor1SoapIn" />
+      <wsdl:output message="tns:GetSpecificIndoor1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PosiData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_特定日期與地點的次數(圖表上</wsdl:documentation>
+      <wsdl:input message="tns:PosiDataSoapIn" />
+      <wsdl:output message="tns:PosiDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectLoacation">
+      <wsdl:input message="tns:SelectLoacationSoapIn" />
+      <wsdl:output message="tns:SelectLoacationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectIndoor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_特定時間與日期平面圖上的次數(沒有帳號)</wsdl:documentation>
+      <wsdl:input message="tns:SelectIndoorSoapIn" />
+      <wsdl:output message="tns:SelectIndoorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="savedate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_特定時間與日期平面圖上的次數(值是利用ajax從前端傳過來的</wsdl:documentation>
+      <wsdl:input message="tns:savedateSoapIn" />
+      <wsdl:output message="tns:savedateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorCurrentDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_圖表最新資料的日期(圖表的)</wsdl:documentation>
+      <wsdl:input message="tns:GetIndoorCurrentDateSoapIn" />
+      <wsdl:output message="tns:GetIndoorCurrentDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveObjectPosition">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">储存圖片_從cookie抓下來的資料</wsdl:documentation>
+      <wsdl:input message="tns:SaveObjectPositionSoapIn" />
+      <wsdl:output message="tns:SaveObjectPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLocation">
+      <wsdl:input message="tns:InsertLocationSoapIn" />
+      <wsdl:output message="tns:InsertLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificAboveIndoor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_平面圖最新資料超過標準值的次數加座標</wsdl:documentation>
+      <wsdl:input message="tns:GetSpecificAboveIndoorSoapIn" />
+      <wsdl:output message="tns:GetSpecificAboveIndoorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectAboveIndoor">
+      <wsdl:input message="tns:GetSelectAboveIndoorSoapIn" />
+      <wsdl:output message="tns:GetSelectAboveIndoorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutdoor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_定位紀錄(GPS)</wsdl:documentation>
+      <wsdl:input message="tns:GetOutdoorSoapIn" />
+      <wsdl:output message="tns:GetOutdoorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_同一天不同地方的每個次數(圖表的)</wsdl:documentation>
+      <wsdl:input message="tns:GetIndoorSoapIn" />
+      <wsdl:output message="tns:GetIndoorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoor1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_同一天不同地方的每個次數(圖表的)</wsdl:documentation>
+      <wsdl:input message="tns:GetIndoor1SoapIn" />
+      <wsdl:output message="tns:GetIndoor1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorCurrent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_圖表最新資料(圖表的)</wsdl:documentation>
+      <wsdl:input message="tns:GetIndoorCurrentSoapIn" />
+      <wsdl:output message="tns:GetIndoorCurrentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorAbove">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_同一天不同地方與不同時間（異常）的次數(圖表的)</wsdl:documentation>
+      <wsdl:input message="tns:GetIndoorAboveSoapIn" />
+      <wsdl:output message="tns:GetIndoorAboveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectIndoor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_特定時間與日期平面圖上的次數</wsdl:documentation>
+      <wsdl:input message="tns:GetSelectIndoorSoapIn" />
+      <wsdl:output message="tns:GetSelectIndoorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificIndoor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查詢_同一時間每個地點的次數(平面圖的)</wsdl:documentation>
+      <wsdl:input message="tns:GetSpecificIndoorSoapIn" />
+      <wsdl:output message="tns:GetSpecificIndoorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PictInsert">
+      <wsdl:input message="tns:PictInsertSoapIn" />
+      <wsdl:output message="tns:PictInsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PictSelect">
+      <wsdl:input message="tns:PictSelectSoapIn" />
+      <wsdl:output message="tns:PictSelectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeArrayElements">
+      <wsdl:input message="tns:ChangeArrayElementsSoapIn" />
+      <wsdl:output message="tns:ChangeArrayElementsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateINFO">
+      <wsdl:input message="tns:updateINFOSoapIn" />
+      <wsdl:output message="tns:updateINFOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="showAddressandCell">
+      <wsdl:input message="tns:showAddressandCellSoapIn" />
+      <wsdl:output message="tns:showAddressandCellSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="isPassword">
+      <wsdl:input message="tns:isPasswordSoapIn" />
+      <wsdl:output message="tns:isPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update新密碼">
+      <wsdl:input message="tns:Update新密碼SoapIn" />
+      <wsdl:output message="tns:Update新密碼SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallLineToken">
+      <wsdl:input message="tns:CallLineTokenSoapIn" />
+      <wsdl:output message="tns:CallLineTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AccountExist">
+      <wsdl:input message="tns:AccountExistSoapIn" />
+      <wsdl:output message="tns:AccountExistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="帳號是否存在">
+      <wsdl:input message="tns:帳號是否存在SoapIn" />
+      <wsdl:output message="tns:帳號是否存在SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sign">
+      <wsdl:input message="tns:SignSoapIn" />
+      <wsdl:output message="tns:SignSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ADwebSoap" type="tns:ADwebSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IdentifyForGPS">
+      <soap:operation soapAction="http://tempuri.org/IdentifyForGPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificIndoor1">
+      <soap:operation soapAction="http://tempuri.org/GetSpecificIndoor1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PosiData">
+      <soap:operation soapAction="http://tempuri.org/PosiData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLoacation">
+      <soap:operation soapAction="http://tempuri.org/SelectLoacation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectIndoor">
+      <soap:operation soapAction="http://tempuri.org/SelectIndoor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="savedate">
+      <soap:operation soapAction="http://tempuri.org/savedate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorCurrentDate">
+      <soap:operation soapAction="http://tempuri.org/GetIndoorCurrentDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveObjectPosition">
+      <soap:operation soapAction="http://tempuri.org/SaveObjectPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLocation">
+      <soap:operation soapAction="http://tempuri.org/InsertLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificAboveIndoor">
+      <soap:operation soapAction="http://tempuri.org/GetSpecificAboveIndoor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectAboveIndoor">
+      <soap:operation soapAction="http://tempuri.org/GetSelectAboveIndoor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutdoor">
+      <soap:operation soapAction="http://tempuri.org/GetOutdoor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoor">
+      <soap:operation soapAction="http://tempuri.org/GetIndoor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoor1">
+      <soap:operation soapAction="http://tempuri.org/GetIndoor1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorCurrent">
+      <soap:operation soapAction="http://tempuri.org/GetIndoorCurrent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorAbove">
+      <soap:operation soapAction="http://tempuri.org/GetIndoorAbove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectIndoor">
+      <soap:operation soapAction="http://tempuri.org/GetSelectIndoor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificIndoor">
+      <soap:operation soapAction="http://tempuri.org/GetSpecificIndoor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PictInsert">
+      <soap:operation soapAction="http://tempuri.org/PictInsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PictSelect">
+      <soap:operation soapAction="http://tempuri.org/PictSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeArrayElements">
+      <soap:operation soapAction="http://tempuri.org/ChangeArrayElements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateINFO">
+      <soap:operation soapAction="http://tempuri.org/updateINFO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showAddressandCell">
+      <soap:operation soapAction="http://tempuri.org/showAddressandCell" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isPassword">
+      <soap:operation soapAction="http://tempuri.org/isPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update新密碼">
+      <soap:operation soapAction="http://tempuri.org/Update新密碼" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallLineToken">
+      <soap:operation soapAction="http://tempuri.org/CallLineToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountExist">
+      <soap:operation soapAction="http://tempuri.org/AccountExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="帳號是否存在">
+      <soap:operation soapAction="http://tempuri.org/帳號是否存在" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sign">
+      <soap:operation soapAction="http://tempuri.org/Sign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ADwebSoap12" type="tns:ADwebSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IdentifyForGPS">
+      <soap12:operation soapAction="http://tempuri.org/IdentifyForGPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificIndoor1">
+      <soap12:operation soapAction="http://tempuri.org/GetSpecificIndoor1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PosiData">
+      <soap12:operation soapAction="http://tempuri.org/PosiData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLoacation">
+      <soap12:operation soapAction="http://tempuri.org/SelectLoacation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectIndoor">
+      <soap12:operation soapAction="http://tempuri.org/SelectIndoor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="savedate">
+      <soap12:operation soapAction="http://tempuri.org/savedate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorCurrentDate">
+      <soap12:operation soapAction="http://tempuri.org/GetIndoorCurrentDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveObjectPosition">
+      <soap12:operation soapAction="http://tempuri.org/SaveObjectPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLocation">
+      <soap12:operation soapAction="http://tempuri.org/InsertLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificAboveIndoor">
+      <soap12:operation soapAction="http://tempuri.org/GetSpecificAboveIndoor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectAboveIndoor">
+      <soap12:operation soapAction="http://tempuri.org/GetSelectAboveIndoor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutdoor">
+      <soap12:operation soapAction="http://tempuri.org/GetOutdoor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoor">
+      <soap12:operation soapAction="http://tempuri.org/GetIndoor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoor1">
+      <soap12:operation soapAction="http://tempuri.org/GetIndoor1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorCurrent">
+      <soap12:operation soapAction="http://tempuri.org/GetIndoorCurrent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndoorAbove">
+      <soap12:operation soapAction="http://tempuri.org/GetIndoorAbove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectIndoor">
+      <soap12:operation soapAction="http://tempuri.org/GetSelectIndoor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecificIndoor">
+      <soap12:operation soapAction="http://tempuri.org/GetSpecificIndoor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PictInsert">
+      <soap12:operation soapAction="http://tempuri.org/PictInsert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PictSelect">
+      <soap12:operation soapAction="http://tempuri.org/PictSelect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeArrayElements">
+      <soap12:operation soapAction="http://tempuri.org/ChangeArrayElements" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateINFO">
+      <soap12:operation soapAction="http://tempuri.org/updateINFO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showAddressandCell">
+      <soap12:operation soapAction="http://tempuri.org/showAddressandCell" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isPassword">
+      <soap12:operation soapAction="http://tempuri.org/isPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update新密碼">
+      <soap12:operation soapAction="http://tempuri.org/Update新密碼" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallLineToken">
+      <soap12:operation soapAction="http://tempuri.org/CallLineToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountExist">
+      <soap12:operation soapAction="http://tempuri.org/AccountExist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="帳號是否存在">
+      <soap12:operation soapAction="http://tempuri.org/帳號是否存在" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sign">
+      <soap12:operation soapAction="http://tempuri.org/Sign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ADweb">
+    <wsdl:port name="ADwebSoap" binding="tns:ADwebSoap">
+      <soap:address location="http://120.125.78.210:8082/ADweb.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ADwebSoap12" binding="tns:ADwebSoap12">
+      <soap12:address location="http://120.125.78.210:8082/ADweb.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
